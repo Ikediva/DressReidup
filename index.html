@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dress Reid Up!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Dress Reid Up!</h1>
+    <div id="game-container">
+        <div id="reid-container">
+            <img id="base-reid" src="reid.png" alt="Base Reid">
+            <img id="dress-layer" src="" alt="Dress" style="display: none;">
+            <img id="shoes-layer" src="" alt="Shoes" style="display: none;">
+        </div>
+        <div id="controls">
+            <h2>Choose Clothing:</h2>
+            <button onclick="addDress('dress1.png')">Dress 1</button>
+            <button onclick="addDress('dress2.png')">Dress 2</button>
+            <button onclick="removeDress()">Remove Dress</button>
+            <h2>Choose Shoes:</h2>
+            <button onclick="addShoes('shoes1.png')">Shoes 1</button>
+            <button onclick="addShoes('shoes2.png')">Shoes 2</button>
+            <button onclick="removeShoes()">Remove Shoes</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
